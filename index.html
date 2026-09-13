@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SMART OR | Digital Surgical Safety</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header><div class="brand"><div class="logo">✚</div><div><b>SMART <i>OR</i></b><small>Digital Safety for Every Patient</small></div></div>
+<div><button id="qrBtn">QR Code</button><button id="resetBtn">Reset</button></div></header>
+<div class="layout"><aside><h4>WORKFLOW</h4>
+<button class="nav" data-step="0">01 · Patient Identification</button><button class="nav" data-step="1">02 · Safety Check</button>
+<button class="nav" data-step="2">03 · Time Out</button><button class="nav" data-step="3">04 · Surgical Count</button>
+<button class="nav" data-step="4">05 · Specimen Safety</button><button class="nav" data-step="5">06 · Confirm</button>
+<div class="stop"><b>Safety Stop</b><p>Stop the process if a critical item is missing or incorrect.</p></div></aside>
+<main><section class="hero"><div><span>OR SAFETY CHECK</span><h1>Scan. Check. Confirm. Safe.</h1><p>Digital surgical safety workflow for the operating room.</p></div>
+<div class="case"><label>OR NUMBER</label><input id="caseNumber" value="OR-03"></div></section>
+<div class="bar"><div id="progress"></div></div><section class="content"><div class="card main" id="screen"></div>
+<aside class="card dash"><h2>OR Safety Dashboard</h2><div class="score"><strong id="score">0%</strong><div><b>Case readiness</b><small id="scoreText">Incomplete</small></div></div>
+<div class="metrics"><div><b id="m1">0%</b><small>Patient ID</small></div><div><b id="m2">0%</b><small>Safety Check</small></div><div><b id="m3">0%</b><small>Surgical Count</small></div><div><b id="m4">0%</b><small>Specimen</small></div></div>
+<h3>Case Activity</h3><ul id="activity"></ul></aside></section></main></div>
+<footer>SMART OR • Prototype • <span id="saved">Saved</span></footer>
+<div id="modal" class="modal hidden"><div class="modalbox"><button id="close">×</button><h2>SMART OR QR Code</h2><p>After publishing, this QR opens the current SMART OR page.</p><div id="qrcode"></div><button id="print">Print QR</button></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="app.js"></script>
+</body></html>

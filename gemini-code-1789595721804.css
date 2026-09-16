@@ -1,0 +1,78 @@
+/* Palette Variables - ألوان الواجهة من الصورة */
+:root {
+  --primary-green: #00A878;
+  --primary-hover: #008f66;
+  --dark-navy: #0D2030;
+  --sidebar-navy: #08141F;
+  --light-bg: #F4F7F6;
+  --card-bg: #FFFFFF;
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --danger-red: #D9383A;
+}
+
+/* Base Layout */
+body {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons - الأزرار التفاعلية */
+.btn-primary, button[type="submit"], .next-btn {
+  background-color: var(--primary-green) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover, .next-btn:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* Headers & Steps Bar - رؤوس الشاشات والخطوات */
+.step-header, .header-title {
+  background-color: var(--dark-navy) !important;
+  color: #FFFFFF !important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Sidebar & Dashboard Dark Theme - لوحة التحكم الداكنة */
+.dashboard-container, .sidebar {
+  background-color: var(--sidebar-navy) !important;
+  color: #FFFFFF !important;
+}
+
+.dashboard-card {
+  background-color: var(--dark-navy) !important;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Form Inputs - حقول الإدخال */
+input[type="text"], select, textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px 12px;
+  background-color: #FAFAFA;
+}
+
+input:focus, select:focus {
+  border-color: var(--primary-green) !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 168, 120, 0.2);
+}
+
+/* Alert / Time Out Box - صندوق التنبيه الأحادي */
+.time-out-alert {
+  background-color: #FDE8E8;
+  color: var(--danger-red);
+  border: 1px solid #F8B4B4;
+  border-radius: 6px;
+}

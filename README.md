@@ -13,7 +13,8 @@ This version implements the supplied design with editable fields and the request
 - QR button that encodes the live published URL
 
 GitHub Pages:
-Upload index.html, styles.css and app.js to the root of the main branch, then enable Pages from main / root.
+Upload index.html, styles.css and 
+app.js to the root of the main branch, then enable Pages from main / root.
 
 Clinical note:
 This is a functional prototype, not a hospital-approved production clinical system. Production deployment requires approved authentication, secure server-side storage, audit logs, privacy controls and clinical validation.
